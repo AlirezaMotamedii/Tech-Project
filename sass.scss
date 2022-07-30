@@ -1,0 +1,389 @@
+body {
+    margin: 0;
+    @font-face {
+        font-family: fontMe;
+        src: url(/Font/Kanit-LightItalic.ttf);
+    }
+    font-family: fontMe;
+}
+
+// Varibale
+
+$bg-one :#f8f8f8;
+$first : #564aeb;
+$secndry : #b6b4b6;
+$th :#d7e5e4;
+$vr :#868695;
+
+// End Varibale
+
+
+// Header
+nav {
+    img {
+        padding-top: .3rem;
+    }
+    a {
+        padding: .5rem 1rem;
+        text-decoration: none;
+        color: black !important;
+        position: relative;
+        overflow: hidden;
+    }
+
+    a::before {
+        content: "";
+        position: absolute;
+        left: -100%;
+        bottom: 0;
+        transition: .5s;
+        width: 100%;
+        height: 2px;
+        background-color: $first;
+        display: inline-block;
+    }
+
+    a:hover::before {
+        left: 0;
+    }
+
+    form {
+        background-color: $bg-one;
+        width: 40%;
+        padding: .5rem;
+        border: solid inherit;
+        overflow: hidden;
+    }
+
+    form {
+        span {
+            padding: .85rem;
+        }
+
+        input {
+            background-color: $bg-one;
+            padding: .5rem;
+        }
+    }
+}
+// End Header
+
+.up {
+    width: 100%;
+    height: 600px;
+    background-image: url(./imgee/1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    button {
+        background-color: $first;
+        color: white;
+        padding: .5rem 1rem;
+        border: none;
+        margin-top: 1rem;
+        font-weight: 700;
+        transition: .5s;
+    }
+
+    button:hover {
+        background-color: rgb(37, 37, 224);
+    }
+}
+
+// section
+
+section a,
+.seeall {
+    text-decoration: none;
+    color: inherit;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid $first;
+}
+
+.Head­phones {
+    background-image: url(./imgee/2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    overflow: hidden;
+}
+
+.Smart­phones {
+    background-image: url(./imgee/3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+
+    a:hover {
+        color: $secndry;
+    }
+}
+
+.Smart­watches {
+    background-image: url(./imgee/4.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+
+    a:hover {
+        color: $secndry;
+    }
+}
+
+// end section
+// Explore Our Product Range
+
+.over:hover {
+    color: $first;
+}
+
+// End Explore Our Product Range
+
+// Grid
+
+.item {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    img {
+        width: 100%;
+    }
+
+    h4 {
+        padding-bottom: 32px;
+        opacity: 0;
+        margin: 0;
+        text-align: center;
+        transition: .5s;
+    }
+
+    div:hover > h4 {
+        opacity: 1;
+    }
+}
+
+#item1,
+#item2,
+#item3,
+#item5,
+#item6 {
+    background-color: $bg-one;
+    border: none;
+}
+
+.item4 {
+    background-color: $bg-one;
+    border: none;
+    h4 {
+        padding-top: 6px;
+    }
+} 
+// End Grid 
+
+
+// Bestseller
+
+.compact {
+    background-image: url(./imgee/5.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 751px;
+    
+    h6 {
+        color: $secndry;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        padding-bottom: .5rem;
+        border-bottom: 2px solid $secndry;
+        transition: .3s;
+    }
+
+    a:hover {
+        color: $secndry;
+    }
+}
+
+.Consoles {
+    background-image: url(./imgee/6.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 369px;
+
+    h6 {
+        color: $th;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        padding-bottom: .5rem;
+        border-bottom: 2px solid $secndry;
+        transition: .3s;
+    }
+
+    a:hover {
+        color: $secndry;
+    }
+}
+
+.Tablets {
+    background-image: url(./imgee/7.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 371px;
+
+    a {
+        color: black;
+        text-decoration: none;
+        padding-bottom: .5rem;
+        border-bottom: 2px solid $first;
+        transition: .3s;
+    }
+
+    a:hover {
+        color: $first;
+    }
+}
+
+.gaming a {
+    color: black;
+    text-decoration: none;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid $first;
+    transition: .3s;
+}
+
+.gaming:hover a {
+    color: $first;
+}
+
+
+
+// End Bestseller
+
+// VR
+
+.vr {
+    a {
+        color: black;
+        text-decoration: none;
+        padding-bottom: .5rem;
+        border-bottom: 2px solid $first;
+        transition: .3s;
+    }
+
+    a:hover {
+        color: $first;
+    }
+}
+
+.vr1 {
+    background-image: url(./imgee/8.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 709px;
+    
+    h5 {
+        color: $vr;
+    }
+}
+
+.vr2 {
+    background-image: url(./imgee/9.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 709px;
+
+    h5 {
+        color: $vr;
+    }
+}
+
+// End VR
+
+// Just
+
+.just {
+    background-color: $first;
+    padding: 64px 0;
+}
+
+.borderr {
+    border-right: 2px solid $secndry;
+}
+
+.post {
+    img {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        margin-bottom: 32px;
+    }
+}
+
+.learn {
+    margin-top: 32px;
+    padding: .5rem 1rem;
+    border: 2px solid white;
+    color: white;
+    font-weight: 700;
+    background-color: $first;
+    transition: .3s;
+}
+
+.learn:hover {
+    background-color: white;
+    color: black;
+}
+
+// End Just
+
+// Footer
+li {
+    list-style-type: none;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #b6b4b6;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.google {
+    color: black;
+    text-decoration: none;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid $first;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+input {
+    border: none;
+    background-color: $bg-one;
+    margin: .5rem 0;
+    padding: .5rem 1rem;
+}
+
+// End Footer
+
+@media screen and (min-with : 992px ) {
+    .up {
+        width: 100%;
+        background-image: url(./imgee/2.webp);
+        background-size: cover;
+        height: 300px;
+        color: red;
+    }
+}
